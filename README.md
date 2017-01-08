@@ -7,7 +7,7 @@ This is outline monitoring plugin for Ruboty.
 Add this line to your Bot's Gemfile:
 
 ```ruby
-gem 'ruboty-http_health_check'
+gem 'ruboty-http_health_check', git: 'https://github.com/takaishi/ruboty-http_health_check'
 ```
 
 ## Usage
@@ -16,6 +16,13 @@ Ruboty wait port 3000 default. You can specify port if you change it.
 
 ```
 $ PORT=8080 ruboty
+```
+
+When ruboty runnning, reply 'OK'.
+
+```
+$ curl http://localhost:3000/
+OK
 ```
 
 ## Development
